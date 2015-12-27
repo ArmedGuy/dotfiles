@@ -8,6 +8,13 @@
 UNAMES=`uname -s`
 export UNAMES
 
+# yolo
+case "$TERM" in
+xterm*)
+	export TERM=xterm-256color
+	;;
+esac
+
 echo $LANG | 'grep' -i utf >/dev/null && UTF8=1 || UTF8=0
 
 # don't put duplicate lines in the history. See bash(1) for more options
