@@ -280,6 +280,11 @@ set viminfo='100
 " Map C-Space to omnicomplete
 inoremap <Nul> <C-x><C-o>
 
+nnoremap <A-Left>  :tabprev<CR>
+nnoremap <A-Right> :tabnext<CR>
+nnoremap <C-t>     :tabnew<CR>
+inoremap <C-t>     <Esc>:tabnew<CR>
+
 " {{{ Taglist
 let Tlist_Auto_Open = 1
 let Tlist_Exit_OnlyWindow = 1
@@ -426,12 +431,4 @@ if domainname =~? "ludd\.ltu\.se"
 	set pdev=Edison
 endif
 
-if $HOSTNAME ==? "nas"
-	let Tlist_Auto_Open = 0
-	let loaded_matchparen = 1
-elseif $HOSTNAME ==? "polgara"
-	let loaded_matchparen = 1
-elseif $HOSTNAME ==? "belgarion"
-	set pdev=MP640R
-endif
 " }}}

@@ -17,13 +17,13 @@
 	changed = green
 	untracked = cyan
 [user]
-	name = Sebastian Larsson
-	email = belgarion@brokenbrain.se
+	name = Johan Jatko
+	email = johan.jatko@outlook.com
 [core]
 	excludesfile = ~/.gitignore
 	pager = less
 [github]
-	user = Belgarion
+	user = ArmedGuy
 
 [alias]
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
