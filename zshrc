@@ -183,9 +183,6 @@ if type keychain >&/dev/null; then
 	keychain ~/.ssh/id_rsa ~/.ssh/id_dsa
 	fsource ~/.keychain/${HOSTNAME}-sh
 fi
-
-type fortune >&/dev/null && fortune
-
 type krenew >&/dev/null && krenew -t
 
 export SDL_AUDIODRIVER="pulse"
