@@ -127,3 +127,4 @@ fi
 [ -d /usr/ccs/sbin ] && PATH="${PATH}":/usr/ccs/sbin
 [ -d /opt/csw/bin ] && PATH="${PATH}":/opt/csw/bin
 [ -d /opt/csw/sbin ] && PATH="${PATH}":/opt/csw/sbin
+
