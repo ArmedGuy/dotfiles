@@ -368,7 +368,7 @@ let g:bg = 0
 
 function! LightBG()
 	set background=dark
-	colorscheme zenburn
+	colorscheme solarized
 	if &t_Co == 256
 		hi Normal ctermbg=238
 		hi LineNr ctermbg=237 ctermfg=248
@@ -385,7 +385,7 @@ command! LightBG call LightBG()
 
 function! DarkBG()
 	set background=dark
-	colorscheme zenburn
+	colorscheme solarized
 	if &t_Co == 256
 		hi Normal ctermbg=black
 		hi LineNr ctermfg=248 ctermbg=0
@@ -410,7 +410,7 @@ function! ToggleBG()
 endfunction
 command! ToggleBG call ToggleBG()
 
-LightBG
+DarkBG
 
 if osys ==? "windows"
 	set guifont=ter-112n:h9
