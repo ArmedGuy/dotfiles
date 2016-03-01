@@ -366,17 +366,18 @@ autocmd BufNewFile,BufRead * syn match ExtraWhitespace /\s\+$/ containedin=ALL
 
 let g:bg = 0
 
+syntax enable
 function! LightBG()
-	set background=dark
+	set background=light
 	colorscheme solarized
-	if &t_Co == 256
-		hi Normal ctermbg=238
-		hi LineNr ctermbg=237 ctermfg=248
-		hi NonText ctermfg=242
+	"if &t_Co == 256
+	"	hi Normal ctermbg=238
+	"	hi LineNr ctermbg=237 ctermfg=248
+	"	hi NonText ctermfg=242
 		"set background=dark
-		hi Pmenu ctermbg=236
-	endif
-	hi Comment gui=none
+	"	hi Pmenu ctermbg=236
+	"endif
+	"hi Comment gui=none
 	highlight OverLength ctermbg=black guibg=black
 	highlight ExtraWhitespace ctermbg=red guibg=red
 	hi link Include PreProc
@@ -386,13 +387,13 @@ command! LightBG call LightBG()
 function! DarkBG()
 	set background=dark
 	colorscheme solarized
-	if &t_Co == 256
-		hi Normal ctermbg=black
-		hi LineNr ctermfg=248 ctermbg=0
-		hi NonText ctermfg=238
-		hi Pmenu ctermbg=236
-	endif
-	hi Comment gui=none
+	"if &t_Co == 256
+	"	hi Normal ctermbg=black
+	"	hi LineNr ctermfg=248 ctermbg=0
+	"	hi NonText ctermfg=238
+	"	hi Pmenu ctermbg=236
+	"endif
+	"hi Comment gui=none
 	highlight OverLength ctermbg=black guibg=black
 	highlight ExtraWhitespace ctermbg=red guibg=red
 	hi link Include PreProc
