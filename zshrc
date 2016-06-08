@@ -8,6 +8,7 @@
 ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
+alias sudo="sleep 1; sudo"
 # CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
